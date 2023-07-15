@@ -1,3 +1,10 @@
+#!/bin/bash
+#SBATCH -c 32  # Number of Cores per Task
+#SBATCH --mem=8192  # Requested Memory
+#SBATCH -p cpu  # Partition
+#SBATCH -t 02:00:00  # Job time limit
+#SBATCH -o slurm-%j.out  # %j = job ID
+
 # Create new directory
 mkdir /project/pi_frederic_chain_uml_edu/Hackbio/WGS_LC_marinefemale/
 
